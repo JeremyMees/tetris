@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "parkour": {
+    "tetris": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/parkour",
+            "outputPath": "dist/tetris",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -72,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "parkour:build:production"
+              "browserTarget": "tetris:build:production"
             },
             "development": {
-              "browserTarget": "parkour:build:development"
+              "browserTarget": "tetris:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "parkour:build"
+            "browserTarget": "tetris:build"
           }
         },
         "test": {
@@ -99,13 +100,24 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "tetris:build:production",
+            "firebaseProject": "tickets-d4c47",
+            "firebaseHostingSite": "tickets-d4c47"
           }
         }
       }
     }
   },
-  "defaultProject": "parkour"
+  "defaultProject": "tetris"
 }

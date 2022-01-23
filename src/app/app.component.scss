@@ -1,0 +1,28 @@
+.flex {
+  display: flex;
+  gap: 2rem;
+  flex-flow: row nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+
+.scores {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-width: 16rem;
+}
+
+.score {
+  color: rgb(245, 96, 96);
+}
+
+.score-line {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+}

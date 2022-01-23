@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tickets-d4c47": {
+      "hosting": {
+        "tetris": [
+          "tickets-d4c47"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tickets-d4c47"
+  }
+}

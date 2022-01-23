@@ -1,5 +1,5 @@
 {
-  "name": "parkour",
+  "name": "tetris",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,16 +11,21 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.1.2",
+    "@angular/cdk": "^12.2.13",
     "@angular/common": "~12.1.2",
     "@angular/compiler": "~12.1.2",
     "@angular/core": "~12.1.2",
+    "@angular/fire": "^7.2.0",
     "@angular/forms": "~12.1.2",
+    "@angular/material": "^12.2.13",
     "@angular/platform-browser": "~12.1.2",
     "@angular/platform-browser-dynamic": "~12.1.2",
     "@angular/router": "~12.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "firebase": "^9.4.0",
+    "rxfire": "^6.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.2",
